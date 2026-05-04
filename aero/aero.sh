@@ -8,7 +8,7 @@ fi
 filename="$1"
 
 echo "$filename"
-printf '%*s\n' "${COLUMNS:-80}" '' | tr ' ' -
+printf '%*s\n' "${COLUMNS:-1000}" '' | tr ' ' -
 
 touch "$filename" || {
     echo "aero: Unable to open $filename (check permissions?)"
@@ -16,10 +16,10 @@ touch "$filename" || {
 }
 
 if [ -s "$filename" ]; then
-    cat $filename
-end
+    cat "$filename"
+fi
 
-temp="$(mktemp)" || exit 1
+temp_file="$(mktemp)" || exit 1
 cp "$filename" "$temp_file" 2>/dev/null
 
 while IFS= read -r line; do
@@ -31,3 +31,7 @@ while IFS= read -r line; do
     fi
     echo "$line" >> "$temp_file"
 done
+
+clear
+mv "$temp_file" "$filename"
+echo "aero: Saved to $filename"
