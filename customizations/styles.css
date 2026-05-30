@@ -18,19 +18,19 @@ body {
 
 a:link {
     color: #c4a7e7;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
 }
 
 a:visited {
     color: #c4a7e7;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
 }
 
 .line1 {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
     padding-top: 0;
     padding-left: 25px;
@@ -39,7 +39,7 @@ a:visited {
 
 .line2 {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
     padding-top: 5px;
     padding-left: 25px;
@@ -48,7 +48,7 @@ a:visited {
 
 .line3 {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
     padding-top: 5px;
     padding-left: 25px;
@@ -57,7 +57,7 @@ a:visited {
 
 .line4 {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
     padding-top: 5px;
     padding-left: 25px;
@@ -66,7 +66,7 @@ a:visited {
 
 .line5 {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 17px;
     padding-top: 5px;
     padding-left: 25px;
@@ -75,7 +75,7 @@ a:visited {
 
 .footer {
     color: whitesmoke;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 11px;
     padding-left: 25px;
     padding-right: 100px;
@@ -84,18 +84,18 @@ a:visited {
 
 .bluesky:visited {
     color: #c4a7e7;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 11px;
 }
 
 .bluesky:link {
     color: #c4a7e7;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 11px;
 }
 
 .discord:link {
     color: #c4a7e7;
-    font-family: 'Lora';
+    font-family: 'Montserrat';
     font-size: 11px;
 }
