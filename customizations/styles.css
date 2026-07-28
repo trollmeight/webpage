@@ -1,101 +1,138 @@
 body {
-    background-color: #232136;
+    background-color: #191724;
     margin: 0;
-    min-height: 100vh;
-}
-
-.page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.lines {
-    margin-top: auto;
-    margin-bottom: auto;
-    align-self: flex-start;
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+    width: 100%;
 }
 
-a:link {
-    color: #c4a7e7;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
+.navbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9999px;
+    background-color: transparent;
+    color: #e0def4;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-a:visited {
-    color: #c4a7e7;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
+.navbtn:hover {
+    background-color: rgba(224, 222, 244, 0.12);
+    color: #e0def4;
 }
 
-.line1 {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
-    padding-top: 0;
-    padding-left: 25px;
-    padding-right: 100px;
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    -webkit-font-smoothing: antialiased;
 }
 
-.line2 {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 100px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.line3 {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 100px;
+.pfp {
+    border-radius: 50%;
+    width: 75px; 
+    height: 75px;
+    object-fit: cover;
+    margin-right: 24px;
 }
 
-.line4 {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 100px;
+.username {
+    display: flex;
+    flex-direction: column;
 }
 
-.line5 {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 17px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 100px;
+.trollmeight {
+    margin: 0;
+    color: #e0def4;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
 }
 
-.footer {
-    color: whitesmoke;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 11px;
-    padding-left: 25px;
-    padding-right: 100px;
-    padding-bottom: 10px;
+.username i {
+    color: #e0def4;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 4px;
 }
 
-.bluesky:visited {
-    color: #c4a7e7;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 11px;
+.horsering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 32px;
+    width: 100%;
 }
 
-.bluesky:link {
-    color: #c4a7e7;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 11px;
+.webring {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.discord:link {
-    color: #c4a7e7;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 11px;
+.ring {
+    color: #e0def4;
+    text-decoration: none;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 15px;
+    transition: color 0.15s ease;
+}
+
+.ring:hover {
+    color: #e0def4;
+}
+
+.dot {
+    color: #6e6a86;
+    font-size: 14px;
+    user-select: none;
+}
+
+.time {
+    color: #e0def4;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 15px;
+}
+
+.timebadge {
+    background-color: rgba(224, 222, 244, 0.08);
+    color: #e0def4;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-variant-numeric: tabular-nums;
 }

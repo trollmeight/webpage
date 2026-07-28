@@ -9,20 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
     <script defer src="https://umami.trollmeight.me/script.js" data-website-id="22c1ac6a-4d92-44cf-96d5-967cdde362cf"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="page">
-        <div class="lines">
-            <div class="line1">Hello! My name is <a href="https://github.com/trollmeight">trollmeight</a></div>
-            <div class="line2">I can speak English and Russian quite well, so feel free to contact me in those languages.</div>
-            <div class="line3">I also own a few projects, such as <a href="https://github.com/is-not-cool/registration">is-not.cool</a> and <a href="https://github.com/stole-my-id/registration">stole-my.id</a> (thanks to <a href="https://iostpa.com">iostpa</a> for assisting me with these projects).</div>
-            <div class="line4">I am an awful programmer, ending my divs in the incorrect spot with all the code outside of it.</div>
-            <div class="line5">This website has a <a href="https://pagespeed.web.dev">Google Pagespeed</a> score (Desktop) of Performance 100, Accessibility 95, Best Practicies 100, and SEO 90.</div>
-        </div>
+    <nav class="nav">
+        <button href="/" class="navbtn">
+            <span class="material-symbols-outlined">home</span>
+            Home
+        </button>
+        <button href="about/" class="navbtn">
+            <span class="material-symbols-outlined">account_circle</span>
+            About
+        </button>
+        <button href="projects/" class="navbtn">
+            <span class="material-symbols-outlined">inventory_2</span>
+            Projects
+        </button>
+    </nav>
 
-        <div class="footer">
-            <p>Created by trollmeight, <a class="discord" href="https://discord.com/users/126675418208246175">Discord</a>, and <a class="bluesky" href="https://bsky.app/profile/trollmeight.me">Bluesky</a></p>
+    <div class="container">
+        <img class="pfp" src="https://cdn.discordapp.com/avatars/1266754182082461751/32bf30d2a5f6eb47e11bd2b72bab811c.webp?size=1024" alt="dog">
+        <div class="username">
+            <h1 class="trollmeight">trollmeight</h1>
+            <i>horse</i>
         </div>
     </div>
+    <footer class="horsering">
+        <div class="webring">
+            <a href="https://horser.ing/prev/trollmeight" class="ring">←</a>
+            <a href="https://horser.ing" class="ring">horsering</a>
+            <a href="https://horser.ing/rand" class="ring">🐴</a>
+            <a href="https://horser.ing/next/trollmeight" class="ring">→</a>
+        </div>
+        <span class="dot">•</span>
+        <div class="time">
+            It's <span id="clock" class="timebadge">00:00</span> in my timezone
+        </div>
+    </footer>
+
+    <script>
+        function clock() {
+            const options = {
+                timeZone: 'America/Chicago',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false
+            };
+            
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            document.getElementById('clock').textContent = formatter.format(new Date());
+        }
+
+        clock();
+        setInterval(clock, 1000);
+    </script>
 </body>
 </html>
