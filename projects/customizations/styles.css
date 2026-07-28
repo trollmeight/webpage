@@ -2,6 +2,8 @@ body {
     background-color: #191724;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -18,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: none;
     border-radius: 9999px;
     background-color: transparent;
@@ -33,8 +35,9 @@ body {
 
 .navbtn:hover,
 .navbtn.active {
-    background-color: rgba(224, 222, 244, 0.08);
+    background-color: rgba(224, 222, 244, 0.12);
     color: #e0def4;
+    text-decoration: none;
 }
 
 .material-symbols-outlined {
@@ -53,25 +56,32 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-p {
-    font-family: 'Google Sans Flex', sans-serif;
+.content {
+    max-width: 900px;
+    margin: 75px auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+ul {
     color: #e0def4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    font-size: 20px;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-size: 1.05rem;
+    line-height: 2;
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    color: #e0def4;
 }
 
 a {
     color: #e0def4;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 a:visited {
     color: #e0def4;
-}
-
-.dot {
-    margin-right: 5px;
-    size: 20px;
 }

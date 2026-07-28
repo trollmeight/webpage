@@ -31,9 +31,10 @@
         <img class="pfp" src="https://cdn.discordapp.com/avatars/1266754182082461751/32bf30d2a5f6eb47e11bd2b72bab811c.webp?size=1024" alt="dog">
         <div class="username">
             <h1 class="trollmeight">trollmeight</h1>
-            <i>horse</i>
+            <i id="status" class="status">Nothing to see here...</i>
         </div>
     </div>
+
     <footer class="horsering">
         <div class="webring">
             <a href="https://horser.ing/prev/trollmeight" class="ring">←</a>
@@ -60,8 +61,28 @@
             document.getElementById('clock').textContent = formatter.format(new Date());
         }
 
+        async function discord() {
+            const statusTag = document.getElementById('status');
+            try {
+                const res = await fetch('https://api.lanyard.rest/v1/users/1266754182082461751');
+                const { data } = await res.json();
+                const custom = data?.activities?.find(act => act.type === 4);
+                let state = custom?.state?.trim() || '';
+
+                if (state.startsWith('"') && state.endsWith('"')) {
+                    state = state.slice(1, -1);
+                }
+                statusTag.textContent = state || 'Nothing to see here...';
+            } catch {
+                statusTag.textContent = 'Nothing to see here...';
+            }
+        }
+
         clock();
         setInterval(clock, 1000);
+
+        discord();
+        setInterval(discord, 30000);
     </script>
 </body>
 </html>
